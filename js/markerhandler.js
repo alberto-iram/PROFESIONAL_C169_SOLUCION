@@ -11,14 +11,14 @@ AFRAME.registerComponent("markerhandler", {
     });
   },
   handleMarkerFound: function() {
-    // Changing button div visibility
+    // Cambia la visibilidad del botón div
     var buttonDiv = document.getElementById("button-div");
     buttonDiv.style.display = "flex";
 
     var orderButtton = document.getElementById("order-button");
     var orderSummaryButtton = document.getElementById("order-summary-button");
 
-    // Handling Click Events
+    // Usa los eventos de clic
     orderButtton.addEventListener("click", () => {
       swal({
         icon: "https://i.imgur.com/4NZ6uLY.jpg",
@@ -39,7 +39,7 @@ AFRAME.registerComponent("markerhandler", {
   },
 
   handleMarkerLost: function() {
-    // Changing button div visibility
+    // Cambia la visibilidad del botón div
     var buttonDiv = document.getElementById("button-div");
     buttonDiv.style.display = "none";
   }
