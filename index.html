@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ar Toy Shop</title>
+    <title>Tienda de juguetes AR</title>
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
@@ -23,10 +23,10 @@
     <!-- sweetalert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <!-- Local StyleSheet -->
+    <!-- StyleSheet local -->
     <link href="./style.css" rel="stylesheet" />
 
-    <!--JS Files-->
+    <!--Archivos JS-->
     <script src="./js/addButtons.js"></script>
     <script src="./js/markerhandler.js"></script>
   </head>
@@ -42,7 +42,7 @@
       gesture-detector
       createbuttons
     >
-      <!-- Camera -->
+      <!-- Cámara -->
       <a-entity camera></a-entity>
 
       <a-assets>
@@ -52,7 +52,7 @@
         ></a-asset-item>
       </a-assets>
 
-      <!--Pattern Marker-->
+      <!--Marcador Pattern-->
       <a-marker
         id="crane-marker"
         type="pattern"
@@ -71,7 +71,7 @@
         >
         </a-entity>
 
-        <!-- Description -->
+        <!-- Descripción -->
         <a-plane
           position="0 0 0"
           width="2.3"
@@ -89,7 +89,7 @@
             <a-entity
               position="1.3 0 0.1"
               rotation="0 0 0"
-              text="font:aileronsemibold;value:HYDRAULIC CRANE;color:#290149;width: 4.5;height:3;align:left;"
+              text="font:aileronsemibold;value:GRUA HIDRAULICA;color:#290149;width: 4.5;height:3;align:left;"
             ></a-entity>
           </a-plane>
 
@@ -97,7 +97,7 @@
             position="0.1 0 0.1"
             rotation="0 0 0"
             text="color: #6b011f; align: left; width: 2;height:5;lineHeight:50;letterSpacing:2; font: dejavu;
-             value:PULL BACK AND GO: Friction powered crane truck toy, 360-degree rotating left and right, machine can pull up & down, swing left & right. High Quality Material: FunBlast crane toy is made of 100% high-quality abs plastics and metal shovel which is durable, light and Non-Toxic with strong crash resistance"
+             value:JALA Y SIGUE: juguete de camion de grua impulsado por friccion y rotacion de 360 grados hacia la izquierda y hacia la derecha. La maquina puede tirar hacia arriba y hacia abajo, girar hacia la izquierda y hacia la derecha. Material de alta calidad: el juguete de grua FunBlast esta hecho de plastico ABS 100% de alta calidad y una pala de metal que es duradera, liviana y no toxica, con una fuerte resistencia a los golpes"
           >
           </a-entity>
 
@@ -112,7 +112,7 @@
       </a-marker>
     </a-scene>
 
-    <!-- Button Main Div -->
+    <!-- Botón div principal -->
     <div id="button-div"></div>
   </body>
 </html>
