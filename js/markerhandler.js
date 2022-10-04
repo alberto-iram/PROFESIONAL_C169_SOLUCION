@@ -1,12 +1,12 @@
 AFRAME.registerComponent("markerhandler", {
   init: async function() {
     this.el.addEventListener("markerFound", () => {
-      console.log("marker is found");
+      console.log("Se encontró el marcador");
       this.handleMarkerFound();
     });
 
     this.el.addEventListener("markerLost", () => {
-      console.log("marker is lost");
+      console.log("Se perdió el marcador");
       this.handleMarkerLost();
     });
   },
@@ -22,7 +22,7 @@ AFRAME.registerComponent("markerhandler", {
     orderButtton.addEventListener("click", () => {
       swal({
         icon: "https://i.imgur.com/4NZ6uLY.jpg",
-        title: "Thanks For Order !",
+        title: "¡Gracias por tu orden!",
         text: "  ",
         timer: 2000,
         buttons: false
@@ -32,8 +32,8 @@ AFRAME.registerComponent("markerhandler", {
     orderSummaryButtton.addEventListener("click", () => {
       swal({
         icon: "warning",
-        title: "Order Summary",
-        text: "Work In Progress"
+        title: "Resumen de la orden",
+        text: "Operación en curso"
       });
     });
   },
